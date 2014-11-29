@@ -1,0 +1,11 @@
+#!/bin/bash
+
+os=${OSTYPE//[0-9.]/}
+
+if [[ $os == "darwin" ]]; then
+  cp ~/.bashrc .
+  cp ~/.bash_profile .
+  cp ~/.gitignore .
+  cp ~/.gitconfig .
+  cp ~/.vimrc .
+fi
