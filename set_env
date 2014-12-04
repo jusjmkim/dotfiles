@@ -1,0 +1,7 @@
+#!/bin/bash
+
+os=${OSTYPE//[0-9.]/}
+
+if [[ $os == "darwin" ]]; then
+  cp .* ~
+fi
