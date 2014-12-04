@@ -3,7 +3,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 # \t shows the time
-export PS1="\e[1;34m[\t]\e[0m\h:\W\$(parse_git_branch)$ "
+export PS1="\e[1;34m[\t]\e[0m\u:\W\$(parse_git_branch)$ "
 
 #Node Path from Homebrew
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
@@ -83,32 +83,23 @@ function sophfall {
 #setting up terminal for work on ibr
 function ibr {
   cd ~/Development/code/ibr
-  gnome-terminal --tab -e "subl ." --tab --tab 
+  subl .
 }
 
 # aliases
 alias l="ls -lah"
 alias gst="git status"
 alias gl="git pull"
+alias ga="git add ."
 alias gp="git push"
+alias gph="git push heroku master"
 alias gd="git diff | mate"
 alias gc="git commit -am"
 alias gca="git commit -v -a"
 alias gb="git branch"
 alias gba="git branch -a"
+alias go="git checkout"
 alias gcb="git checkout -b"
-alias make_android_10="android -s create avd -f -n Android_2.3.3 -t android-10 --sdcard 64M --abi x86"
-alias emulate_android_10="emulator -avd Android_2.3.3"
-alias make_android_15="android -s create avd -f -n Android_4.0.3 -t android-15 --sdcard 64M --abi armeabi-v7a"
-alias emulate_android_15="emulator -avd Android_4.0.3"
-alias make_android_19="android -s create avd -f -n Android_4.4.2 -t android-19 --sdcard 64M --abi armeabi-v7a"
-alias emulate_android_19="emulator -avd Android_4.4.2"
-alias Open="xdg-open"
-
-#increases palm detection
-synclient PalmDetect=1 PalmMinWidth=10 PalmMinZ=200
-#increase touch threshold
-synclient FingerLow=0 FingerHigh=80 
 
 #final configurations and plugins
 #tab completion
