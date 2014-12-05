@@ -5,5 +5,5 @@ os=${OSTYPE//[0-9.]/}
 if [[ $os == "darwin" ]]; then
   rsync .bash* ~
   rsync --exclude='.git' .git* ~
-  rsync .vim* ~
+  cp -r .vim* ~
 fi

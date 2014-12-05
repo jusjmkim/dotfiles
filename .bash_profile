@@ -83,7 +83,7 @@ function sophfall {
 #setting up terminal for work on ibr
 function ibr {
   cd ~/Development/code/ibr
-  subl .
+  vim .
 }
 
 # aliases
@@ -100,6 +100,7 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias go="git checkout"
 alias gcb="git checkout -b"
+alias viminstall="vim +PluginInstall +qall"
 
 #final configurations and plugins
 #tab completion
