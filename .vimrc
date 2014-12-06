@@ -33,6 +33,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'https://github.com/ervandew/supertab.git'
 " Allows multiple cursors
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
+" Allows rvm to work with vim
+Plugin 'tpope/vim-rvm'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -42,6 +44,9 @@ set wildmenu
 "autocomplete html
 autocmd BufNewFile,BufRead *.html.erb set filetype=html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+"Turn syntax highlighting on
+syntax on
 
 "highlight searches
 set hlsearch

@@ -100,6 +100,7 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias go="git checkout"
 alias gcb="git checkout -b"
+alias rails_precompile="RAILS_ENV=production bundle exec rake assets:precompile"
 alias viminstall="vim +PluginInstall +qall"
 
 #final configurations and plugins
@@ -116,4 +117,5 @@ export PATH=$PATH:$HOME/bin:$JAVA_HOME/lib
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 #mandatory loading of RVM
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
