@@ -22,6 +22,8 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Opens directory structure buffer
 Plugin 'https://github.com/scrooloose/nerdtree.git'
+" Allows comment toggling
+Plugin 'https://github.com/scrooloose/nerdcommenter.git'
 " Sets up rails related shortcuts
 Plugin 'git://github.com/tpope/vim-rails.git'
 " Code snippets
@@ -74,6 +76,14 @@ nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 nmap <S-J> gj
 nmap <S-K> gk
+nmap <S-H> g0
+vmap <S-H> g0
+nmap <S-L> g$
+vmap <S-L> g$
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-L> <C-W><C-L>
+nmap <C-H> <C-W><C-H>
 imap jj <Esc>
 
 "NERDtree modifications
@@ -86,3 +96,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let NERDTreeShowHidden=1
 "Switch to other buffer
 autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
+
+" NERDcommenter modifications
+let mapleader=","
