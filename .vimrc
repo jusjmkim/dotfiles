@@ -41,37 +41,37 @@ Plugin 'tpope/vim-rvm'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"better command-line completion
+" better command-line completion
 set wildmenu
-"autocomplete html
+" autocomplete html
 autocmd BufNewFile,BufRead *.html.erb set filetype=html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
-"Turn syntax highlighting on
+" Turn syntax highlighting on
 syntax on
 
-"highlight searches
+" highlight searches
 set hlsearch
 
-"Keeps same indent
+" Keeps same indent
 set autoindent
 
-"Display cursor position
+" Display cursor position
 set ruler
 
-"Set command window height to 2 lines
+" Set command window height to 2 lines
 set cmdheight=2
 
-"Display line numbers on left
+" Display line numbers on left
 set number
 
-"Set tabs to 2 spaces
+" Set tabs to 2 spaces
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 set tabstop=2
 
-"Keyboard shortcuts
+" Keyboard shortcuts
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 nmap <S-J> gj
@@ -86,16 +86,19 @@ nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
 imap jj <Esc>
 
-"NERDtree modifications
+" NERDtree modifications
 
-"Open NERDtree automatically
+" Open NERDtree automatically
 autocmd vimenter * NERDTree
-"Closes NERDtree if only buffer
+" Closes NERDtree if only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-"Show dotfiles
+" Show dotfiles
 let NERDTreeShowHidden=1
-"Switch to other buffer
+" Switch to other buffer
 autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
 
 " NERDcommenter modifications
 let mapleader=","
+
+" Connect yank to clipboard
+set clipboard=unnamed
