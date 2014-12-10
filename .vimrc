@@ -49,6 +49,8 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " Turn syntax highlighting on
 syntax on
+set fillchars=vert:\ ,fold:\
+colorscheme lettuce
 
 " highlight searches
 set hlsearch
