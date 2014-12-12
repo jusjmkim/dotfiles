@@ -30,7 +30,7 @@
   email = justinjmkim@gmail.com
 [user]
   name = jusjmkim
-  email = justinjmkim@gmail.com
+	email = justinjmkim@gmail.com
 [color]
   ui = true
   diff = auto
