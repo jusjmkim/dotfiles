@@ -104,3 +104,4 @@ let mapleader=","
 
 " Connect yank to clipboard
 set clipboard=unnamed
+
