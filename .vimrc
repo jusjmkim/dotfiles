@@ -32,11 +32,13 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 " Sets up tab completion
-Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+Plugin 'https://github.com/ervandew/supertab.git'
 " Allows multiple cursors
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 " Allows rvm to work with vim
 Plugin 'tpope/vim-rvm'
+" Allows for easy motion
+Plugin 'Lokaltog/vim-easymotion'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -101,6 +103,9 @@ autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
 
 " NERDcommenter modifications
 let mapleader=","
+
+" easy motion
+nmap <leader> <Plug>(easymotion-prefix)
 
 " Connect yank to clipboard
 set clipboard=unnamed
