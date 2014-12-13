@@ -32,7 +32,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 " Sets up tab completion
-Plugin 'https://github.com/ervandew/supertab.git'
+Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 " Allows multiple cursors
 Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 " Allows rvm to work with vim
@@ -104,4 +104,3 @@ let mapleader=","
 
 " Connect yank to clipboard
 set clipboard=unnamed
-
