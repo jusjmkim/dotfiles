@@ -39,6 +39,8 @@ Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
 Plugin 'tpope/vim-rvm'
 " Allows for easy motion
 Plugin 'Lokaltog/vim-easymotion'
+" Solarized Color Scheme
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -50,9 +52,12 @@ autocmd BufNewFile,BufRead *.html.erb set filetype=html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " Turn syntax highlighting on
-syntax on
+syntax enable
 set fillchars=vert:\ ,fold:\
-colorscheme lettuce
+let g:solarized_termcolors=256
+let g:solarized_visibility="high"
+set background=dark
+colorscheme solarized
 
 " highlight searches
 set hlsearch
