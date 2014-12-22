@@ -86,6 +86,10 @@ function ibr {
   vim .
 }
 
+function cis197 {
+  cd ~/Development/code/cis197
+}
+
 # aliases
 alias l="ls -lah"
 alias gst="git status"

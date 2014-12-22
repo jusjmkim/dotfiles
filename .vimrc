@@ -26,6 +26,10 @@ Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/scrooloose/nerdcommenter.git'
 " Sets up rails related shortcuts
 Plugin 'git://github.com/tpope/vim-rails.git'
+" Javascript Syntax
+Plugin 'pangloss/vim-javascript'
+" Ruby Syntax
+Plugin 'vim-ruby/vim-ruby'
 " Code snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
