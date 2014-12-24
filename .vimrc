@@ -60,7 +60,7 @@ syntax enable
 set fillchars=vert:\ ,fold:\
 let g:solarized_termcolors=256
 let g:solarized_visibility="high"
-set background=dark
+set background=light
 colorscheme solarized
 
 " highlight searches
@@ -98,6 +98,7 @@ nmap <C-K> <C-W><C-K>
 nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
 imap jj <Esc>
+nnoremap p ]p
 
 " NERDtree modifications
 
