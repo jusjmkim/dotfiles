@@ -98,7 +98,7 @@ nmap <C-K> <C-W><C-K>
 nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
 imap jj <Esc>
-nnoremap p ]p
+nnoremap p p=`]
 
 " NERDtree modifications
 
