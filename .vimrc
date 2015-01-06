@@ -21,9 +21,9 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Opens directory structure buffer
-Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'scrooloose/nerdtree'
 " Allows comment toggling
-Plugin 'https://github.com/scrooloose/nerdcommenter.git'
+Plugin 'scrooloose/nerdcommenter'
 " Sets up rails related shortcuts
 Plugin 'git://github.com/tpope/vim-rails.git'
 " Javascript Syntax
@@ -36,15 +36,19 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 " Sets up tab completion
-Plugin 'https://github.com/ervandew/supertab.git'
+Plugin 'ervandew/supertab'
+" Closes quotes, parens, etc.
+Plugin 'Raimondi/delimitMate'
 " Allows multiple cursors
-Plugin 'https://github.com/terryma/vim-multiple-cursors.git'
+Plugin 'terryma/vim-multiple-cursors'
 " Allows rvm to work with vim
 Plugin 'tpope/vim-rvm'
 " Allows for easy motion
 Plugin 'Lokaltog/vim-easymotion'
 " Solarized Color Scheme
 Plugin 'altercation/vim-colors-solarized'
+" Colored status/tabline
+Plugin 'bling/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

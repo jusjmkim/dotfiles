@@ -50,3 +50,5 @@
   trustExitCode = true
 [merge]
   tool = opendiff
+[credential]
+	helper = osxkeychain
