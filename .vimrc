@@ -30,6 +30,8 @@ Plugin 'git://github.com/tpope/vim-rails.git'
 Plugin 'pangloss/vim-javascript'
 " Ruby Syntax
 Plugin 'vim-ruby/vim-ruby'
+" OCaml Syntax
+Plugin 'the-lambda-church/merlin'
 " Code snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'

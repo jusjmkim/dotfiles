@@ -70,14 +70,9 @@ function data {
   cd ~/Development/data
 }
 
-#access server 2 in gregory labs
-function gregory2 {
-  ssh kimjus@gregory-compute02.bio.upenn.edu
-}
-
 #shortuct to go to sophomore fall
-function sophfall {
-  cd ~/Documents/sophomore_fall
+function sophspring {
+  cd ~/Documents/sophomore_spring
 }
 
 #setting up terminal for work on ibr
