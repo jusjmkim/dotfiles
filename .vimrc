@@ -125,3 +125,10 @@ nmap <leader> <Plug>(easymotion-prefix)
 
 " Connect yank to clipboard
 set clipboard=unnamed
+
+" Set up merlin
+if executable('ocamlmerlin') && has('python')
+  let s:ocamlmerlin = substitute(system('opam config var share'), '\n$', '', '''') . "/ocamlmerlin"
+  execute "set rtp+=".s:ocamlmerlin."/vim"
+  execute "set rtp+=".s:ocamlmerlin."/vimbufsync"
+endif
