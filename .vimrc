@@ -32,6 +32,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
 " OCaml Syntax
 Plugin 'the-lambda-church/merlin'
+" Mustache Templates
+Plugin 'mustache/vim-mustache-handlebars'
 " Code snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -63,11 +65,13 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " Turn syntax highlighting on
 syntax enable
-set fillchars=vert:\ ,fold:\
-let g:solarized_termcolors=256
-let g:solarized_visibility="high"
-set background=light
-colorscheme solarized
+colorscheme inkpot
+
+"solarized settings
+"set fillchars=vert:\ ,fold:\
+"let g:solarized_termcolors=256
+"let g:solarized_visibility="high"
+"set background=light
 
 " highlight searches
 set hlsearch
@@ -91,7 +95,7 @@ set expandtab
 set tabstop=2
 
 " Keyboard shortcuts
-nmap <S-Enter> O<Esc>
+nmap <S-CR> O<Esc>
 nmap <CR> o<Esc>
 nmap <S-J> gj
 nmap <S-K> gk
