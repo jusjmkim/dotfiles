@@ -26,6 +26,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 " Sets up rails related shortcuts
 Plugin 'git://github.com/tpope/vim-rails.git'
+
 " Javascript Syntax
 Plugin 'pangloss/vim-javascript'
 " Ruby Syntax
@@ -34,11 +35,14 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'the-lambda-church/merlin'
 " Mustache Templates
 Plugin 'mustache/vim-mustache-handlebars'
+" LaTex Syntax
+Plugin 'lervag/vim-latex'
 " Code snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
 " Sets up tab completion
 Plugin 'ervandew/supertab'
 " Closes quotes, parens, etc.
@@ -62,6 +66,8 @@ set wildmenu
 " autocomplete html
 autocmd BufNewFile,BufRead *.html.erb set filetype=html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+" ultisnips settings
+let g:UltiSnipsExpandTrigger="<tab>"
 
 " Turn syntax highlighting on
 syntax enable
