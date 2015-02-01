@@ -71,6 +71,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 
 " Turn syntax highlighting on
 syntax enable
+set t_Co=256
 colorscheme inkpot
 
 "solarized settings
@@ -103,12 +104,10 @@ set tabstop=2
 " Keyboard shortcuts
 nmap <S-CR> O<Esc>
 nmap <CR> o<Esc>
-nmap <S-J> gj
-nmap <S-K> gk
-nmap <S-H> g0
-vmap <S-H> g0
-nmap <S-L> g$
-vmap <S-L> g$
+map <S-J> gj
+map <S-K> gk
+map <S-H> g0
+map <S-L> g$
 nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-L> <C-W><C-L>
