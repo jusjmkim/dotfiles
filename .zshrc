@@ -93,6 +93,7 @@ export PS1=$'\e[1;34m[%*]%{$reset_color%}%d$(parse_git_branch)$ '
 
 #Node Path from Homebrew
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+source ~/.nvm/nvm.sh
 
 #prioritizing usr directories in PATH
 export USR_PATHS="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin"
@@ -173,9 +174,9 @@ export PATH=$PATH:$HOME/bin:$JAVA_HOME/lib
 #Postgres setup
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
-#mandatory loading of RVM
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # OPAM configuration
 . /Users/justinkim/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+#mandatory loading of RVM
+source ~/.profile
+
