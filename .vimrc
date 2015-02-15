@@ -69,6 +69,9 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " ultisnips settings
 let g:UltiSnipsExpandTrigger="<tab>"
 
+" set vim to chdir at different levels
+autocmd BufEnter * lcd %:p:h
+
 " Turn syntax highlighting on
 syntax enable
 set t_Co=256
@@ -141,3 +144,4 @@ if executable('ocamlmerlin') && has('python')
   execute "set rtp+=".s:ocamlmerlin."/vim"
   execute "set rtp+=".s:ocamlmerlin."/vimbufsync"
 endif
+

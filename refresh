@@ -9,4 +9,5 @@ if [[ $os == "darwin" ]]; then
   cp ~/.gitconfig .
   cp ~/.vimrc .
   cp -r ~/.vim/colors ./.vim
+  cp ~/.zshrc .
 fi
