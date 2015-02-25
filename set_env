@@ -6,5 +6,6 @@ if [[ $os == "darwin" ]]; then
   rsync .bash* ~
   rsync --exclude='.git' .git* ~
   rsync .zsh* ~
+  rsync .tmux.conf ~
   cp -r .vim* ~
 fi
