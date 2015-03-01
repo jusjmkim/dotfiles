@@ -5,7 +5,7 @@ export ZSH=/Users/justinkim/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,13 +83,36 @@ setopt PROMPT_SUBST
 # load colors
 autoload -U colors && colors
 
-# This function is called in your prompt to output your active git branch.
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
+# Git Info
+local git_info='$(git_prompt_info)'
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[white]%}on%{$reset_color%} git:%{$fg[cyan]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}x"
+ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}o"
 
-# \t shows the time
-export PS1=$'\e[1;34m[%*]%{$reset_color%}%d$(parse_git_branch)$ '
+: <<'FORMAT'
+Prompt format:
+
+PRIVILEGES USER @ MACHINE in DIRECTORY on git:BRANCH STATE [TIME] L:SHELL_LEVEL N:LINE_NUM
+$ COMMAND
+
+For example:
+
+% ys@ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] L:1 N:6
+$ 
+
+FORMAT
+
+PROMPT="
+%{$terminfo[bold]$fg[blue]%}%#%{$reset_color%} \
+  %{$fg[cyan]%}%n \
+  %{$fg[white]%}@ \
+  %{$fg[green]%}%m \
+  %{$fg[white]%}in \
+  %{$terminfo[bold]$fg[yellow]%}%~%{$reset_color%}\
+  ${git_info} \
+  %{$fg[white]%}[%*] L:%L N:%i
+%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
 
 #Node Path from Homebrew
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
