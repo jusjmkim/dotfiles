@@ -77,12 +77,6 @@ syntax enable
 set t_Co=256
 colorscheme inkpot
 
-"solarized settings
-"set fillchars=vert:\ ,fold:\
-"let g:solarized_termcolors=256
-"let g:solarized_visibility="high"
-"set background=light
-
 " highlight searches
 set hlsearch
 
@@ -94,6 +88,16 @@ set ruler
 
 " Set command window height to 2 lines
 set cmdheight=2
+
+" Show current incomplete commands
+set showcmd
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
 
 " Display line numbers on left
 set number
@@ -117,6 +121,7 @@ nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
 imap jj <Esc>
 nnoremap p p=`]
+nnoremap R "_d
 
 " NERDtree modifications
 
