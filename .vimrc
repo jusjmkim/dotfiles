@@ -38,19 +38,23 @@ Plugin 'mustache/vim-mustache-handlebars'
 " LaTex Syntax
 Plugin 'lervag/vim-latex'
 " Code snippets
+Plugin 'SirVer/ultisnips'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
+Plugin 'scrooloose/snipmate-snippets'
 " Sets up tab completion
 Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
 " Closes quotes, parens, etc.
 Plugin 'Raimondi/delimitMate'
 " Allows multiple cursors
 Plugin 'terryma/vim-multiple-cursors'
 " Allows rvm to work with vim
 Plugin 'tpope/vim-rvm'
+" HTML mappings
+Plugin 'tpope/vim-ragtag'
 " Allows for easy motion
 Plugin 'Lokaltog/vim-easymotion'
 " Solarized Color Scheme
@@ -66,10 +70,15 @@ set wildmenu
 " autocomplete html
 autocmd BufNewFile,BufRead *.html.erb set filetype=html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
 " ultisnips settings
 let g:UltiSnipsExpandTrigger="<tab>"
+" youcompleteme settings
+let g:ycm_key_list_select_completion = "<C-n>"
+let g:ycm_key_list_previous_completion = "<C-p>"
+" supertab settings
+let g:SuperTabDefaultCompletionType = "<C-Tab>"
 
-" set vim to chdir at different levels
 autocmd BufEnter * lcd %:p:h
 
 " Turn syntax highlighting on
@@ -111,7 +120,7 @@ set tabstop=2
 " Keyboard shortcuts
 nmap <S-CR> O<Esc>
 nmap <CR> o<Esc>
-map <S-J> gj
+map j gj
 map <S-K> gk
 map <S-H> g0
 map <S-L> g$
@@ -121,9 +130,7 @@ nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
 imap jj <Esc>
 nnoremap p p=`]
-nnoremap R "_d
-
-" NERDtree modifications
+nnoremap ; "_d
 
 " Open NERDtree automatically
 autocmd vimenter * NERDTree
