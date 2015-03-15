@@ -72,12 +72,12 @@ autocmd BufNewFile,BufRead *.html.erb set filetype=html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " ultisnips settings
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger='<tab>'
 " youcompleteme settings
-let g:ycm_key_list_select_completion = "<C-n>"
-let g:ycm_key_list_previous_completion = "<C-p>"
+let g:ycm_key_list_select_completion=['<C-n>']
+let g:ycm_key_list_previous_completion=['<C-p>']
 " supertab settings
-let g:SuperTabDefaultCompletionType = "<C-Tab>"
+let g:SuperTabDefaultCompletionType='<C-Tab>'
 
 autocmd BufEnter * lcd %:p:h
 
