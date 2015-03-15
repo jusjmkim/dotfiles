@@ -57,10 +57,10 @@ Plugin 'tpope/vim-rvm'
 Plugin 'tpope/vim-ragtag'
 " Allows for easy motion
 Plugin 'Lokaltog/vim-easymotion'
-" Solarized Color Scheme
-Plugin 'altercation/vim-colors-solarized'
 " Colored status/tabline
 Plugin 'bling/vim-airline'
+" Fuzzy search
+Plugin 'wincent/Command-T'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
