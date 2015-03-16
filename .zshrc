@@ -169,6 +169,11 @@ function cis197 {
   cd ~/Development/code/cis197
 }
 
+function maketex {
+  pdflatex *.tex
+  open *.pdf
+}
+
 # aliases
 alias l="ls -lah"
 alias gst="git status"
