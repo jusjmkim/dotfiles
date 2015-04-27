@@ -121,7 +121,7 @@ set tabstop=2
 nmap <S-CR> O<Esc>
 nmap <CR> o<Esc>
 map j gj
-map <S-K> gk
+noremap k gk
 map <S-H> g0
 map <S-L> g$
 nmap <C-J> <C-W><C-J>

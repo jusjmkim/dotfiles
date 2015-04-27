@@ -81,8 +81,12 @@ function ibr {
   vim .
 }
 
-function cis197 {
-  cd ~/Development/code/cis197
+function cis196 {
+  cd ~/Development/code/cis196
+}
+
+function sshcis196 {
+  ssh cis196@eniac.seas.upenn.edu
 }
 
 # aliases

@@ -161,7 +161,7 @@ function sophspring {
 
 #setting up terminal for work on ibr
 function ibr {
-  cd ~/Development/code/ibr
+  cd ~/Development/code/whartonibr
   vim .
 }
 
