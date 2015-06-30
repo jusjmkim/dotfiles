@@ -170,7 +170,6 @@ function sshcis196 {
 ssh cis196@eniac.seas.upenn.edu
 }
 
-
 function maketex {
   pdflatex *.tex
   open *.pdf

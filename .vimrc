@@ -84,7 +84,7 @@ autocmd BufEnter * lcd %:p:h
 " Turn syntax highlighting on
 syntax enable
 set t_Co=256
-colorscheme inkpot
+colorscheme railscasts
 
 " highlight searches
 set hlsearch
