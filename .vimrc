@@ -25,7 +25,7 @@ Plugin 'scrooloose/nerdtree'
 " Allows comment toggling
 Plugin 'scrooloose/nerdcommenter'
 " Sets up rails related shortcuts
-Plugin 'git://github.com/tpope/vim-rails.git'
+Plugin 'tpope/vim-rails'
 
 " Javascript Syntax
 Plugin 'pangloss/vim-javascript'
@@ -37,8 +37,9 @@ Plugin 'the-lambda-church/merlin'
 Plugin 'mustache/vim-mustache-handlebars'
 " LaTex Syntax
 Plugin 'lervag/vim-latex'
-" Code snippets
+" Track the engine
 Plugin 'SirVer/ultisnips'
+" Code snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
@@ -68,7 +69,7 @@ filetype plugin indent on    " required
 " better command-line completion
 set wildmenu
 " autocomplete html
-autocmd BufNewFile,BufRead *.html.erb set filetype=html
+autocmd BufNewFile,BufRead *.html.erb set filetype=eruby.html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " ultisnips settings

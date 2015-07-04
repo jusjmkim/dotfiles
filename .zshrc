@@ -208,4 +208,3 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 #mandatory loading of RVM
 source ~/.profile
-
