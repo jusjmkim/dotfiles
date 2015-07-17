@@ -191,6 +191,7 @@ alias go="git checkout"
 alias gcb="git checkout -b"
 alias rails_precompile="RAILS_ENV=production bundle exec rake assets:precompile"
 alias viminstall="vim +PluginInstall +qall"
+alias tmux="tmux -2"
 
 #prioritizing usr directories in PATH
 export USR_PATHS="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin"
