@@ -163,16 +163,21 @@ function ibr {
 }
 
 function cis196 {
-cd ~/Development/code/cis196
+  cd ~/Development/code/cis196
 }
 
 function sshcis196 {
-ssh cis196@eniac.seas.upenn.edu
+  ssh cis196@eniac.seas.upenn.edu
 }
 
 function maketex {
   pdflatex *.tex
   open *.pdf
+}
+
+# VMAIL with other accounts
+function nitsujmail {
+  VMAIL_HOME=~/.vmail/nitsuj199 vmail
 }
 
 # aliases
@@ -193,15 +198,15 @@ alias rails_precompile="RAILS_ENV=production bundle exec rake assets:precompile"
 alias viminstall="vim +PluginInstall +qall"
 alias tmux="tmux -2"
 
-#prioritizing usr directories in PATH
+# prioritizing usr directories in PATH
 export USR_PATHS="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin"
 export PATH="$USR_PATHS:$PATH"
 
-#Android setup
+# Android setup
 export JAVA_HOME=/usr/local/java/jdk1.8.0_25
 export PATH=$PATH:$HOME/bin:$JAVA_HOME/lib
 
-#Postgres setup
+# Postgres setup
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 # OPAM configuration

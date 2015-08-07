@@ -1,0 +1,93 @@
+# Logfile created on 2015-08-05 21:27:32 -0700 by logger.rb/47272
+D, [2015-08-05T21:27:33.784115 #59817] DEBUG -- : RUBY0001 OK nitsuj199@gmail.com authenticated (Success)
+
+D, [2015-08-05T21:27:33.784222 #59817] DEBUG -- : loading mailboxes...
+D, [2015-08-05T21:27:33.928539 #59817] DEBUG -- : Loaded mailboxes: ["INBOX", "Facebook", "Personal", "Receipts", "Travel", "Work", "[Gmail]/All Mail", "[Gmail]/Drafts", "[Gmail]/Important", "[Gmail]/Sent Mail", "[Gmail]/Spam", "[Gmail]/Starred", "[Gmail]/Trash", "github", "juskim@bergen.org"]
+D, [2015-08-05T21:27:33.928689 #59817] DEBUG -- : Setting aliases to {"sent"=>"[Gmail]/Sent Mail", "all"=>"[Gmail]/All Mail", "starred"=>"[Gmail]/Starred", "important"=>"[Gmail]/Important", "drafts"=>"[Gmail]/Drafts", "spam"=>"[Gmail]/Spam", "trash"=>"[Gmail]/Trash"}
+D, [2015-08-05T21:27:33.974798 #59817] DEBUG -- : Selecting mailbox "INBOX"
+D, [2015-08-05T21:27:34.795916 #59817] DEBUG -- : RUBY0003 OK [READ-WRITE] INBOX selected. (Success)
+
+D, [2015-08-05T21:27:34.796047 #59817] DEBUG -- : Done
+D, [2015-08-05T21:27:34.799980 #59817] DEBUG -- : Getting mailbox status
+D, [2015-08-05T21:27:34.800037 #59817] DEBUG -- : Getting highest message id
+D, [2015-08-05T21:27:38.198026 #59817] DEBUG -- : Highest seqno: 61185
+D, [2015-08-05T21:27:38.654793 #59817] DEBUG -- : Setting window width to 181
+D, [2015-08-05T21:27:38.844496 #59817] DEBUG -- : Selecting mailbox "INBOX"
+D, [2015-08-05T21:27:39.619884 #59817] DEBUG -- : RUBY0005 OK [READ-WRITE] INBOX selected. (Success)
+
+D, [2015-08-05T21:27:39.620023 #59817] DEBUG -- : Done
+D, [2015-08-05T21:27:39.620647 #59817] DEBUG -- : Getting mailbox status
+D, [2015-08-05T21:27:39.620691 #59817] DEBUG -- : Getting highest message id
+D, [2015-08-05T21:27:42.095974 #59817] DEBUG -- : Highest seqno: 61185
+D, [2015-08-05T21:27:42.323352 #59817] DEBUG -- : #search: "\"all\""
+D, [2015-08-05T21:27:42.323519 #59817] DEBUG -- : Query: "61086:61185 all"
+D, [2015-08-05T21:27:42.501999 #59817] DEBUG -- : - Query got 100 results; max seqno: 61185
+D, [2015-08-05T21:27:42.502081 #59817] DEBUG -- : Clearing cached message
+D, [2015-08-05T21:27:42.502216 #59817] DEBUG -- : Fetching headers for 100 messages
+D, [2015-08-05T21:27:52.137475 #59817] DEBUG -- : Closing connection
+D, [2015-08-05T21:28:18.633898 #59868] DEBUG -- : RUBY0001 OK nitsuj199@gmail.com authenticated (Success)
+
+D, [2015-08-05T21:28:18.634003 #59868] DEBUG -- : loading mailboxes...
+D, [2015-08-05T21:28:18.809793 #59868] DEBUG -- : Loaded mailboxes: ["INBOX", "Facebook", "Personal", "Receipts", "Travel", "Work", "[Gmail]/All Mail", "[Gmail]/Drafts", "[Gmail]/Important", "[Gmail]/Sent Mail", "[Gmail]/Spam", "[Gmail]/Starred", "[Gmail]/Trash", "github", "juskim@bergen.org"]
+D, [2015-08-05T21:28:18.809927 #59868] DEBUG -- : Setting aliases to {"sent"=>"[Gmail]/Sent Mail", "all"=>"[Gmail]/All Mail", "starred"=>"[Gmail]/Starred", "important"=>"[Gmail]/Important", "drafts"=>"[Gmail]/Drafts", "spam"=>"[Gmail]/Spam", "trash"=>"[Gmail]/Trash"}
+D, [2015-08-05T21:28:19.218405 #59868] DEBUG -- : Selecting mailbox "INBOX"
+D, [2015-08-05T21:28:19.886704 #59868] DEBUG -- : RUBY0003 OK [READ-WRITE] INBOX selected. (Success)
+
+D, [2015-08-05T21:28:19.886827 #59868] DEBUG -- : Done
+D, [2015-08-05T21:28:19.887569 #59868] DEBUG -- : Getting mailbox status
+D, [2015-08-05T21:28:19.887614 #59868] DEBUG -- : Getting highest message id
+D, [2015-08-05T21:28:23.663493 #59868] DEBUG -- : Highest seqno: 61185
+D, [2015-08-05T21:28:24.098651 #59868] DEBUG -- : Setting window width to 181
+D, [2015-08-05T21:28:24.277318 #59868] DEBUG -- : Selecting mailbox "INBOX"
+D, [2015-08-05T21:28:25.394081 #59868] DEBUG -- : RUBY0005 OK [READ-WRITE] INBOX selected. (Success)
+
+D, [2015-08-05T21:28:25.394256 #59868] DEBUG -- : Done
+D, [2015-08-05T21:28:25.394818 #59868] DEBUG -- : Getting mailbox status
+D, [2015-08-05T21:28:25.394860 #59868] DEBUG -- : Getting highest message id
+D, [2015-08-05T21:28:28.755855 #59868] DEBUG -- : Highest seqno: 61185
+D, [2015-08-05T21:28:28.993940 #59868] DEBUG -- : #search: "\"all\""
+D, [2015-08-05T21:28:28.994113 #59868] DEBUG -- : Query: "61086:61185 all"
+D, [2015-08-05T21:28:29.239374 #59868] DEBUG -- : - Query got 100 results; max seqno: 61185
+D, [2015-08-05T21:28:29.239455 #59868] DEBUG -- : Clearing cached message
+D, [2015-08-05T21:28:29.239489 #59868] DEBUG -- : Fetching headers for 100 messages
+D, [2015-08-05T21:28:32.579078 #59868] DEBUG -- : Closing connection
+D, [2015-08-05T21:29:06.864607 #60084] DEBUG -- : RUBY0001 OK nitsuj199@gmail.com authenticated (Success)
+
+D, [2015-08-05T21:29:06.864713 #60084] DEBUG -- : loading mailboxes...
+D, [2015-08-05T21:29:07.041500 #60084] DEBUG -- : Loaded mailboxes: ["INBOX", "Facebook", "Personal", "Receipts", "Travel", "Work", "[Gmail]/All Mail", "[Gmail]/Drafts", "[Gmail]/Important", "[Gmail]/Sent Mail", "[Gmail]/Spam", "[Gmail]/Starred", "[Gmail]/Trash", "github", "juskim@bergen.org"]
+D, [2015-08-05T21:29:07.041630 #60084] DEBUG -- : Setting aliases to {"sent"=>"[Gmail]/Sent Mail", "all"=>"[Gmail]/All Mail", "starred"=>"[Gmail]/Starred", "important"=>"[Gmail]/Important", "drafts"=>"[Gmail]/Drafts", "spam"=>"[Gmail]/Spam", "trash"=>"[Gmail]/Trash"}
+D, [2015-08-05T21:29:07.093124 #60084] DEBUG -- : Selecting mailbox "INBOX"
+D, [2015-08-05T21:29:07.754042 #60084] DEBUG -- : RUBY0003 OK [READ-WRITE] INBOX selected. (Success)
+
+D, [2015-08-05T21:29:07.754173 #60084] DEBUG -- : Done
+D, [2015-08-05T21:29:07.754901 #60084] DEBUG -- : Getting mailbox status
+D, [2015-08-05T21:29:07.754944 #60084] DEBUG -- : Getting highest message id
+D, [2015-08-05T21:29:10.406661 #60084] DEBUG -- : Highest seqno: 61185
+D, [2015-08-05T21:29:10.849730 #60084] DEBUG -- : Setting window width to 181
+D, [2015-08-05T21:29:11.027639 #60084] DEBUG -- : Selecting mailbox "INBOX"
+D, [2015-08-05T21:29:11.703677 #60084] DEBUG -- : RUBY0005 OK [READ-WRITE] INBOX selected. (Success)
+
+D, [2015-08-05T21:29:11.703803 #60084] DEBUG -- : Done
+D, [2015-08-05T21:29:11.704389 #60084] DEBUG -- : Getting mailbox status
+D, [2015-08-05T21:29:11.704431 #60084] DEBUG -- : Getting highest message id
+D, [2015-08-05T21:29:14.330176 #60084] DEBUG -- : Highest seqno: 61185
+D, [2015-08-05T21:29:14.646361 #60084] DEBUG -- : #search: "\"all\""
+D, [2015-08-05T21:29:14.646526 #60084] DEBUG -- : Query: "61086:61185 all"
+D, [2015-08-05T21:29:14.823633 #60084] DEBUG -- : - Query got 100 results; max seqno: 61185
+D, [2015-08-05T21:29:14.823716 #60084] DEBUG -- : Clearing cached message
+D, [2015-08-05T21:29:14.823757 #60084] DEBUG -- : Fetching headers for 100 messages
+D, [2015-08-05T21:29:52.159050 #60084] DEBUG -- : Priming connection
+D, [2015-08-05T21:29:52.418631 #60084] DEBUG -- : Checking for new messages
+D, [2015-08-05T21:29:52.418722 #60084] DEBUG -- : Selecting mailbox "INBOX"
+D, [2015-08-05T21:29:53.107005 #60084] DEBUG -- : RUBY0010 OK [READ-WRITE] INBOX selected. (Success)
+
+D, [2015-08-05T21:29:53.107132 #60084] DEBUG -- : Done
+D, [2015-08-05T21:29:53.107560 #60084] DEBUG -- : Getting mailbox status
+D, [2015-08-05T21:29:53.107601 #60084] DEBUG -- : Getting highest message id
+D, [2015-08-05T21:29:56.377051 #60084] DEBUG -- : Highest seqno: 61185
+D, [2015-08-05T21:29:56.377155 #60084] DEBUG -- : Search #update_query
+D, [2015-08-05T21:29:56.553320 #60084] DEBUG -- : - got seqnos: [61185]
+D, [2015-08-05T21:29:56.553392 #60084] DEBUG -- : - getting seqnos > 61185
+D, [2015-08-05T21:29:56.553424 #60084] DEBUG -- : - setting max_seqno to 61185
+D, [2015-08-05T21:29:56.553447 #60084] DEBUG -- : - new uids found: []
+D, [2015-08-05T21:30:04.262998 #60084] DEBUG -- : Closing connection

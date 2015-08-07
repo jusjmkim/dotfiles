@@ -8,4 +8,5 @@ if [[ $os == "darwin" ]]; then
   rsync .zsh* ~
   rsync .tmux.conf ~
   cp -r .vim* ~
+  cp -r .vmail ~
 fi
