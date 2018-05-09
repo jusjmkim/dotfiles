@@ -96,7 +96,7 @@ $ COMMAND
 For example:
 
 % ys@ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] L:1 N:6
-$ 
+$
 
 FORMAT
 
@@ -151,9 +151,8 @@ function data {
   cd ~/Development/data
 }
 
-#shortuct to go to sophomore fall
-function sophspring {
-  cd ~/Documents/sophomore_spring
+function school {
+  cd ~/Documents/senior_spring
 }
 
 #setting up terminal for work on ibr
@@ -163,21 +162,29 @@ function ibr {
 }
 
 function cis196 {
-  cd ~/Development/code/cis196
+  cd ~/Development/code/cis196/2017s
 }
 
 function sshcis196 {
   ssh cis196@eniac.seas.upenn.edu
 }
 
-function maketex {
-  pdflatex *.tex
-  open *.pdf
+function sshbruce {
+  ssh -i ~/.ssh/cis196.pem ec2-user@cis196.usebruce.com
+}
+
+function maketex () {
+  pdflatex "$1.tex"
+  open "$1.pdf"
 }
 
 # VMAIL with other accounts
 function nitsujmail {
   VMAIL_HOME=~/.vmail/nitsuj199 vmail
+}
+
+function fountain () {
+  afterwriting --source "$1.fountain" --pdf --overwrite "$1.pdf"
 }
 
 # aliases
@@ -198,6 +205,13 @@ alias rails_precompile="RAILS_ENV=production bundle exec rake assets:precompile"
 alias viminstall="vim +PluginInstall +qall"
 alias tmux="tmux -2"
 
+# disables autocorrecting
+if [[ "$ENABLE_CORRECTION" == "true" ]]; then
+  alias rspec="nocorrect rspec"
+  alias brspec="nocorrect bundle exec rspec"
+  unsetopt correct_all
+fi
+
 # prioritizing usr directories in PATH
 export USR_PATHS="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin"
 export PATH="$USR_PATHS:$PATH"
@@ -214,3 +228,5 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 #mandatory loading of RVM
 source ~/.profile
+
+export PATH="/usr/local/opt/libxml2/bin:$PATH"

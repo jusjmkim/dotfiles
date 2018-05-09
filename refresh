@@ -11,5 +11,4 @@ if [[ $os == "darwin" ]]; then
   cp -r ~/.vim/colors ./.vim
   cp ~/.zshrc .
   cp ~/.tmux.conf .
-  cp -r ~/.vmail .
 fi

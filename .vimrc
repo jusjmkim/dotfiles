@@ -103,7 +103,6 @@ set cmdheight=2
 set showcmd
 
 " Make it obvious where 80 characters is
-set textwidth=80
 set colorcolumn=+1
 
 " Display extra whitespace
@@ -130,6 +129,7 @@ nmap <C-K> <C-W><C-K>
 nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
 imap jj <Esc>
+imap JJ <Esc>
 nnoremap p p=`]
 nnoremap ; "_d
 
@@ -149,7 +149,13 @@ let mapleader=","
 nmap <leader> <Plug>(easymotion-prefix)
 
 " Connect yank to clipboard
-set clipboard=unnamed
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
 
 " Set up merlin
 if executable('ocamlmerlin') && has('python')
@@ -157,4 +163,7 @@ if executable('ocamlmerlin') && has('python')
   execute "set rtp+=".s:ocamlmerlin."/vim"
   execute "set rtp+=".s:ocamlmerlin."/vimbufsync"
 endif
+
+" fountain syntax
+au BufRead,BufNewFile *.fountain setfiletype fountain
 
