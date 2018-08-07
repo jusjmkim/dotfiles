@@ -37,8 +37,6 @@ Plugin 'the-lambda-church/merlin'
 Plugin 'mustache/vim-mustache-handlebars'
 " LaTex Syntax
 Plugin 'lervag/vim-latex'
-" Track the engine
-Plugin 'SirVer/ultisnips'
 " Code snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -47,7 +45,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/snipmate-snippets'
 " Sets up tab completion
 Plugin 'ervandew/supertab'
-Plugin 'Valloric/YouCompleteMe'
 " Closes quotes, parens, etc.
 Plugin 'Raimondi/delimitMate'
 " Allows multiple cursors

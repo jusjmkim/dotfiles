@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/justinkim/.oh-my-zsh
+export ZSH=/home/justinkim/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -62,7 +62,7 @@ export EDITOR='vim'
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -147,44 +147,17 @@ function code {
   cd ~/Development/code
 }
 
-function data {
-  cd ~/Development/data
+function pia {
+  sh ~/pia.sh
 }
 
-function school {
-  cd ~/Documents/senior_spring
-}
-
-#setting up terminal for work on ibr
-function ibr {
-  cd ~/Development/code/whartonibr
-  vim .
-}
-
-function cis196 {
-  cd ~/Development/code/cis196/2017s
-}
-
-function sshcis196 {
-  ssh cis196@eniac.seas.upenn.edu
-}
-
-function sshbruce {
-  ssh -i ~/.ssh/cis196.pem ec2-user@cis196.usebruce.com
+function killpia {
+  pkill -f pia
 }
 
 function maketex () {
   pdflatex "$1.tex"
   open "$1.pdf"
-}
-
-# VMAIL with other accounts
-function nitsujmail {
-  VMAIL_HOME=~/.vmail/nitsuj199 vmail
-}
-
-function fountain () {
-  afterwriting --source "$1.fountain" --pdf --overwrite "$1.pdf"
 }
 
 # aliases
@@ -230,3 +203,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 source ~/.profile
 
 export PATH="/usr/local/opt/libxml2/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

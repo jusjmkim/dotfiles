@@ -27,10 +27,10 @@
 [github "user"]
   user = jusjmkim
   token = <API token>
-  email = justinjmkim@gmail.com
+  email = justinjmkim@tutamail.com
 [user]
   name = jusjmkim
-	email = justinjmkim@gmail.com
+	email = justinjmkim@tutamail.com
 [color]
   ui = true
   diff = auto
