@@ -37,6 +37,8 @@ Plugin 'the-lambda-church/merlin'
 Plugin 'mustache/vim-mustache-handlebars'
 " LaTex Syntax
 Plugin 'lervag/vim-latex'
+" Track the engine
+Plugin 'SirVer/ultisnips'
 " Code snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -71,9 +73,6 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " ultisnips settings
 let g:UltiSnipsExpandTrigger='<tab>'
-" youcompleteme settings
-let g:ycm_key_list_select_completion=['<C-n>']
-let g:ycm_key_list_previous_completion=['<C-p>']
 " supertab settings
 let g:SuperTabDefaultCompletionType='<C-Tab>'
 
